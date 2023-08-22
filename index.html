@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<link>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@220&display=swap" rel="stylesheet">
+    <title>Viraj</title>
+</head>
+
+<body>
+    <nav style="display: flex;justify-content: space-between;text-align: center;">
+           <h1 class="marg">PORTFOLiO</h1>
+           <span class="marg" style="cursor:pointer;" onclick="openNav()">&#9776;</span>
+
+    </nav>
+    <br>
+    <div class="overlay" style="border: 2px white;" id="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
+        <div class="overlay-content" id="myNav">
+        <a onclick="closeNav()" href="#section1">Home</a> 
+        <a onclick="closeNav()" href="#skills">Skills</a> 
+        <a onclick="closeNav()" href="#about">About</a> 
+        <a onclick="closeNav()" href="#contact">Contact</a> 
+        <a onclick="closeNav()" href="#project">Project</a> 
+        </div>
+    </div>
+
+    <div id="section1"></div>
+    <div class="section">
+        <div>
+            <p class="info">Hi,I'm Viraj Potdar</p>  
+            <p class="info" id="anima" style="color: orangered;">Web Developer</p>
+            <p class="info">From India!</p>
+        </div>
+       <img src="me.png" width="25%" class="img" >
+    </div>
+    <div class="box" >
+        <p class="head" id="skills">SKILLS</p>
+        <div class="skills">  
+            <div class="logo"><img src="images/html.png"  width="10%" alt="HTML5"></div>
+            <div  class="logo"><img src="images/css.png" width="10%" alt="CSS3"></div>
+            <div  class="logo"><img src="images/js.png" width="10%" alt="JS"></div>
+            <div id="skills"></div>
+            <div  class="logo"><img src="images/boots.png" width="10%" alt="BOOTSTRAP"></div>
+            <div  class="logo"><img src="images/node.png" width="10%" alt="NODEJS"></div>
+            <div  class="logo" id="about"><img src="images/mongo.png" width="10%" alt="MONGODB"></div>
+        </div>
+    </div>
+
+    <div class="box" style="margin-top: 100px;">
+        <p class="head" >ABOUT</p>
+        <p class="bout" id="about">I am a Full Stack Web Developer and I develop websites using HTML CSS and JS. For backend I use Node JS and Express JS combination along with MongoDB. I work hard to build websites that not only look fantastic but also function smoothly across devices, from responsive layouts.I am constantly expanding my skill set and staying up-to-date with the latest technologies and industry trends. I believe in the power of continuous learning and improvement.I'm open to Job opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don't hesitate to contact me.</p>
+
+        <div class="socials" id="project">
+          <a href="https://www.linkedin.com/in/viraj-potdar-9a6877210/" target="_blank"><img src="images/linkedin.png" target="_blank"></a>
+          <a href="https://github.com/vraj404" target="_blank"><img src="images/github.png"></a>
+          <a href="https://mail.google.com/mail/u/0/?to=vrajvsp@gmail.com&su=You%20Are%20Hired&&fs=1&tf=cm" target="_blank"><img src="images/gmail.png"></a>
+          <a href="https://www.instagram.com/viraj_811/" target="_blank"><img src="images/instagram.png"></a>
+          <a href="https://www.facebook.com/viraj.potdar.98" target="_blank"><img src="images/facebook.png"></a>
+        </div>
+    </div>
+    <div class="box">
+        <p class="head" id="about">PROJECT</p>
+        <div style="margin: 30px;">     
+             <div class="bout2">
+            <p class="boutText">I created <b>Bakery Web Application</b> that offers customers a lovely platform to browse a selection of mouthwatering cakes and easily place orders. Customers can browse, make choices, and make purchases with ease thanks to a user-friendly design, intuitive cart system, and personalized profiles. The project serves as a demonstration for my expertise in responsive web design, user experience design, and backend development.</p>
+            <img src="images/e-commerace.png" style="border-radius: 10px;">
+        </div>
+    </div>
+    <div class="bout2 part2">
+       
+        <p class="boutText">In my <b>Employee Management System</b> project, I designed and developed a comprehensive platform. This system empowers businesses to efficiently manage employee data, including personal information, roles. With proper authentication this project demonstrates my proficiency in backend development and creating practical solutions for organizational needs..</p>
+ <img src="images/employee.png" style="border-radius: 10px; float: left;">
+    </div></div>
+</div>
+<div class="box"  style="margin-top: 80px; margin-bottom: 80px;" id="contact">
+    <p class="head">CONTACT</p>
+    
+    <i style="display: flex; flex-flow: column;margin-top: 40px; font-size: 19px; gap: 10px;">
+        <p class="quote" >Commnuication is the key for any global business.</p>
+        <p style="text-align: center;" class="quote">-Anita Roddick</p>
+    </i>
+
+    <div>
+        <div class="form">
+            <form>
+                <input class="inp" type="text" name="name" placeholder="Name">
+                <input class="inp" type="email" name="name" placeholder="Email">
+                <textarea placeholder="Message" class="inp2" rows="10" cols="54"></textarea>            
+                <button class="btn">SUBMIT</button>
+            </form>
+        </div>
+       
+    </div>
+Developed With 🧡 By Viraj Potdar</body>
+</div>
+<script>
+function openNav() {
+  document.getElementById("overlay").style.height = "100%";
+}
+
+function closeNav() {
+  document.getElementById("overlay").style.height = "0%";
+}
+</script>
+</html>
+

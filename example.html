@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    .overlay{
+      height: 100%;
+      width: 0%;
+      background-color: red;
+      position: fixed;
+      overflow-x: hidden;
+
+    }
+  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <span onclick="openMenu()">&#9776;</span>
+
+  <div class="overlay" id="overlay">
+    <div class="overlay-content">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">&times;</a>
+      <a>
+        Home
+      </a>
+      <a>
+        Home
+      </a>
+      <a>
+        Home
+      </a>
+    </div>
+  </div>
+</body>
+<script>
+  function openMenu() {
+	  document.getElementById("overlay").style.width = "100%";
+	}
+
+	/* Close when someone clicks on the "x" symbol inside the overlay */
+	function closeMenu() {
+	  document.getElementById("overlay").style.width = "0%";
+	}
+</script>
+</html>
